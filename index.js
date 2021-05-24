@@ -1,5 +1,5 @@
 const dotenv = require('dotenv').config()
-const geoService = require('./src/api/geoService')
+const geoService = require('./api/geoService')
 const args = require('minimist')(process.argv.slice(2))
 
 const raiseException = (msg) => {
