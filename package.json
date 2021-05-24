@@ -4,7 +4,7 @@
   "description": "Carbon Footprint Calculator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start-dev": "node src/index.js"
   },
   "repository": {
@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/vickyokrm/co2-calc#readme",
   "dependencies": {
+    "chai": "^4.3.4",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "minimist": "^1.2.5",
+    "mocha": "^8.4.0",
     "node-fetch": "^2.6.1"
   }
 }
