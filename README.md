@@ -16,7 +16,7 @@ To run the software, just clone the repository, load dependencies, set some envi
 
 The following environment variables need to be set:
 
-- **ORS_TOKEN** - API Token from openrouteservice
+- **ORS_TOKEN** - API Token from openrouteservice.org
 
 ## Starting application
 
