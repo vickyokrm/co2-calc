@@ -18,6 +18,7 @@ The following environment variables need to be set:
 
 - **ORS_TOKEN** - API Token from openrouteservice.org
 
+.env file must be located on the project root.
 ## Starting application
 
 The app shall be started from command line interface
