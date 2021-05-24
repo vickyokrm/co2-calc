@@ -2,9 +2,9 @@ const fetch = require('node-fetch')
 const querystring = require('querystring')
 
 const url = 'https://api.openrouteservice.org'
-const api_key = process.env.ORS_TOKEN
+const apiKey = process.env.ORS_TOKEN
 const searchCity = async (text, layers = 'locality') => {
-  const endPoint = url + '/geocode/search?' + querystring.stringify({ api_key, text, size: 1 })
+  const endPoint = url + '/geocode/search?' + querystring.stringify({ api_key: apiKey, text, size: 1 })
   const response = await fetch(endPoint)
   if (!response.ok) {
     throw new Error('Reading city information failed')
@@ -15,7 +15,7 @@ const searchCity = async (text, layers = 'locality') => {
 const getDistance = async (locations) => {
   const endPoint = url + '/v2/matrix/driving-car'
   const headers = {
-    Authorization: api_key,
+    Authorization: apiKey,
     'content-type': 'application/json'
   }
 
