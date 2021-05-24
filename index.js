@@ -1,6 +1,7 @@
 const dotenv = require('dotenv').config()
-const geoService = require('./api/geoService')
 const args = require('minimist')(process.argv.slice(2))
+const emissons =  require('./src/emissons')
+const distance =  require('./src/distance')
 
 const raiseException = (msg) => {
     throw new Error(msg);
@@ -33,77 +34,11 @@ const validateUserInput = (args) => {
 }
 
 
-const calculateEmisson = (distance, transportmethod) => {
-    let emisson;
-    switch (transportmethod) {
-        case "small-diesel-car":
-            emisson = distance * 142
-            break;
-        case "small-petrol-car":
-            emisson = distance * 154
-            break;
-        case "small-plugin-hybrid-car":
-            emisson = distance * 73
-            break;
-        case "small-electric-car":
-            emisson = distance * 50
-            break;
-        case "medium-diesel-car":
-            emisson = distance * 171
-            break;
-        case "medium-petrol-car":
-            emisson = distance * 192
-            break;
-        case "medium-plugin-hybrid-car":
-            emisson = distance * 110
-            break;
-        case "medium-electric-car":
-            emisson = distance * 58
-            break;
-        case "large-diesel-car":
-            emisson = distance * 209
-            break;
-        case "large-petrol-car":
-            emisson = distance * 282
-            break;
-        case "large-plugin-hybrid-car":
-            emisson = distance * 126
-            break;
-        case "large-electric-car":
-            emisson = distance * 73
-            break;
-        case "bus":
-            emisson = distance * 27
-            break;
-        case "train":
-            emisson = distance * 6
-            break;
-        default:
-            emisson = 0
-            break;
-    }
-    return emisson
-}
-
-const findDistances = async (args) => {
-    ({start, end} = args)
-    const startLocation = await geoService.searchCity(start);
-    const destination = await geoService.searchCity(end);
-
-    const startCoOrdinates = startLocation.features.map(feature => feature.geometry.coordinates)
-    const endCoOrdinates = destination.features.map(feature => feature.geometry.coordinates)
-
-    if (startCoOrdinates.length && endCoOrdinates.length) {
-        return distanceBetweenCities = await geoService.getDistance([].concat(startCoOrdinates, endCoOrdinates))
-    }
-
-}
-
 async function startApplication() {
     try {
         validateUserInput(args);
-        const distance = await findDistances(args);
-        const co2emisson = calculateEmisson(distance, args.transportationmethod);
+        const distanceBetweenCities = await distance.find(args.start, args.end);
+        const co2emisson = emissons.compute(distanceBetweenCities, args.transportationmethod);
         console.log(`Your trip caused approx. ${Math.ceil(co2emisson)} of co2.`)
     } catch (error) {
         console.error(error)
