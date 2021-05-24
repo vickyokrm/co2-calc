@@ -1,0 +1,453 @@
+{
+    "geocoding": {
+        "version": "0.2",
+        "attribution": "https://openrouteservice.org/terms-of-service/#attribution-geocode",
+        "query": {
+            "text": "Berlin",
+            "size": 10,
+            "layers": [
+                "locality"
+            ],
+            "private": false,
+            "lang": {
+                "name": "English",
+                "iso6391": "en",
+                "iso6393": "eng",
+                "defaulted": false
+            },
+            "querySize": 20,
+            "parser": "libpostal",
+            "parsed_text": {
+                "city": "berlin"
+            }
+        },
+        "engine": {
+            "name": "Pelias",
+            "author": "Mapzen",
+            "version": "1.0"
+        },
+        "timestamp": 1621853836446
+    },
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.40732,
+                    52.52045
+                ]
+            },
+            "properties": {
+                "id": "101748799",
+                "gid": "whosonfirst:locality:101748799",
+                "layer": "locality",
+                "source": "whosonfirst",
+                "source_id": "101748799",
+                "name": "Berlin",
+                "confidence": 1,
+                "match_type": "exact",
+                "accuracy": "centroid",
+                "country": "Germany",
+                "country_gid": "whosonfirst:country:85633111",
+                "country_a": "DEU",
+                "region": "Berlin",
+                "region_gid": "whosonfirst:region:85682499",
+                "region_a": "BE",
+                "locality": "Berlin",
+                "locality_gid": "whosonfirst:locality:101748799",
+                "continent": "Europe",
+                "continent_gid": "whosonfirst:continent:102191581",
+                "label": "Berlin, Germany"
+            },
+            "bbox": [
+                13.0883536782,
+                52.3382388102,
+                13.7611311116,
+                52.6755085786
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -88.53333,
+                    13.5
+                ]
+            },
+            "properties": {
+                "id": "421179135",
+                "gid": "whosonfirst:locality:421179135",
+                "layer": "locality",
+                "source": "whosonfirst",
+                "source_id": "421179135",
+                "name": "Berlín",
+                "confidence": 1,
+                "match_type": "exact",
+                "accuracy": "centroid",
+                "country": "El Salvador",
+                "country_gid": "whosonfirst:country:85632545",
+                "country_a": "SLV",
+                "region": "Usulután",
+                "region_gid": "whosonfirst:region:85677187",
+                "region_a": "US",
+                "county": "Berlin",
+                "county_gid": "whosonfirst:county:1108694721",
+                "county_a": "BE",
+                "locality": "Berlín",
+                "locality_gid": "whosonfirst:locality:421179135",
+                "continent": "North America",
+                "continent_gid": "whosonfirst:continent:102191575",
+                "label": "Berlín, El Salvador"
+            },
+            "bbox": [
+                -88.53333,
+                13.5,
+                -88.53333,
+                13.5
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.260186,
+                    44.487209
+                ]
+            },
+            "properties": {
+                "id": "85975077",
+                "gid": "whosonfirst:locality:85975077",
+                "layer": "locality",
+                "source": "whosonfirst",
+                "source_id": "85975077",
+                "name": "Berlin",
+                "confidence": 1,
+                "match_type": "exact",
+                "accuracy": "centroid",
+                "country": "United States",
+                "country_gid": "whosonfirst:country:85633793",
+                "country_a": "USA",
+                "region": "New Hampshire",
+                "region_gid": "whosonfirst:region:85688689",
+                "region_a": "NH",
+                "county": "Coos County",
+                "county_gid": "whosonfirst:county:102085529",
+                "county_a": "CO",
+                "localadmin": "Berlin",
+                "localadmin_gid": "whosonfirst:localadmin:404477057",
+                "locality": "Berlin",
+                "locality_gid": "whosonfirst:locality:85975077",
+                "continent": "North America",
+                "continent_gid": "whosonfirst:continent:102191575",
+                "label": "Berlin, NH, USA"
+            },
+            "bbox": [
+                -71.397858,
+                44.445057,
+                -71.123642,
+                44.528436
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.937758,
+                    39.789902
+                ]
+            },
+            "properties": {
+                "id": "85975613",
+                "gid": "whosonfirst:locality:85975613",
+                "layer": "locality",
+                "source": "whosonfirst",
+                "source_id": "85975613",
+                "name": "Berlin",
+                "confidence": 1,
+                "match_type": "exact",
+                "accuracy": "centroid",
+                "country": "United States",
+                "country_gid": "whosonfirst:country:85633793",
+                "country_a": "USA",
+                "region": "New Jersey",
+                "region_gid": "whosonfirst:region:85688607",
+                "region_a": "NJ",
+                "county": "Camden County",
+                "county_gid": "whosonfirst:county:102081131",
+                "county_a": "CM",
+                "localadmin": "Berlin",
+                "localadmin_gid": "whosonfirst:localadmin:404477985",
+                "locality": "Berlin",
+                "locality_gid": "whosonfirst:locality:85975613",
+                "continent": "North America",
+                "continent_gid": "whosonfirst:continent:102191575",
+                "label": "Berlin, NJ, USA"
+            },
+            "bbox": [
+                -74.966113,
+                39.77601,
+                -74.907959,
+                39.809175
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -88.952344,
+                    43.968582
+                ]
+            },
+            "properties": {
+                "id": "101732851",
+                "gid": "whosonfirst:locality:101732851",
+                "layer": "locality",
+                "source": "whosonfirst",
+                "source_id": "101732851",
+                "name": "Berlin",
+                "confidence": 1,
+                "match_type": "exact",
+                "accuracy": "centroid",
+                "country": "United States",
+                "country_gid": "whosonfirst:country:85633793",
+                "country_a": "USA",
+                "region": "Wisconsin",
+                "region_gid": "whosonfirst:region:85688517",
+                "region_a": "WI",
+                "county": "Green Lake County",
+                "county_gid": "whosonfirst:county:102081283",
+                "county_a": "GL",
+                "localadmin": "Berlin",
+                "localadmin_gid": "whosonfirst:localadmin:404495241",
+                "locality": "Berlin",
+                "locality_gid": "whosonfirst:locality:101732851",
+                "continent": "North America",
+                "continent_gid": "whosonfirst:continent:102191575",
+                "label": "Berlin, WI, USA"
+            },
+            "bbox": [
+                -88.980852,
+                43.947614,
+                -88.920726,
+                43.997968
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.62538,
+                    35.45061
+                ]
+            },
+            "properties": {
+                "id": "1125884335",
+                "gid": "whosonfirst:locality:1125884335",
+                "layer": "locality",
+                "source": "whosonfirst",
+                "source_id": "1125884335",
+                "name": "Berlin",
+                "confidence": 1,
+                "match_type": "exact",
+                "accuracy": "centroid",
+                "country": "United States",
+                "country_gid": "whosonfirst:country:85633793",
+                "country_a": "USA",
+                "region": "Oklahoma",
+                "region_gid": "whosonfirst:region:85688585",
+                "region_a": "OK",
+                "county": "Roger Mills County",
+                "county_gid": "whosonfirst:county:102083273",
+                "county_a": "RR",
+                "locality": "Berlin",
+                "locality_gid": "whosonfirst:locality:1125884335",
+                "continent": "North America",
+                "continent_gid": "whosonfirst:continent:102191575",
+                "label": "Berlin, OK, USA"
+            },
+            "bbox": [
+                -99.62538,
+                35.45061,
+                -99.62538,
+                35.45061
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.90962,
+                    4.79736
+                ]
+            },
+            "properties": {
+                "id": "1260235155",
+                "gid": "whosonfirst:locality:1260235155",
+                "layer": "locality",
+                "source": "whosonfirst",
+                "source_id": "1260235155",
+                "name": "Berlin",
+                "confidence": 1,
+                "match_type": "exact",
+                "accuracy": "centroid",
+                "country": "Colombia",
+                "country_gid": "whosonfirst:country:85632519",
+                "country_a": "COL",
+                "region": "Cundinamarca",
+                "region_gid": "whosonfirst:region:85670159",
+                "region_a": "CU",
+                "county": "Guasca",
+                "county_gid": "whosonfirst:county:1108700653",
+                "county_a": "GU",
+                "locality": "Berlin",
+                "locality_gid": "whosonfirst:locality:1260235155",
+                "continent": "South America",
+                "continent_gid": "whosonfirst:continent:102191577",
+                "label": "Berlin, Colombia"
+            },
+            "bbox": [
+                -73.90962,
+                4.79736,
+                -73.90962,
+                4.79736
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.44987,
+                    54.03573
+                ]
+            },
+            "properties": {
+                "id": "1125982925",
+                "gid": "whosonfirst:locality:1125982925",
+                "layer": "locality",
+                "source": "whosonfirst",
+                "source_id": "1125982925",
+                "name": "Berlin",
+                "confidence": 1,
+                "match_type": "exact",
+                "accuracy": "centroid",
+                "country": "Germany",
+                "country_gid": "whosonfirst:country:85633111",
+                "country_a": "DEU",
+                "region": "Schleswig-Holstein",
+                "region_gid": "whosonfirst:region:85682517",
+                "region_a": "SH",
+                "county": "Segeberg ",
+                "county_gid": "whosonfirst:county:102064103",
+                "county_a": "SG",
+                "locality": "Berlin",
+                "locality_gid": "whosonfirst:locality:1125982925",
+                "continent": "Europe",
+                "continent_gid": "whosonfirst:continent:102191581",
+                "label": "Berlin, Germany"
+            },
+            "bbox": [
+                10.44987,
+                54.03573,
+                10.44987,
+                54.03573
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.74222,
+                    34.18149
+                ]
+            },
+            "properties": {
+                "id": "1260203093",
+                "gid": "whosonfirst:locality:1260203093",
+                "layer": "locality",
+                "source": "whosonfirst",
+                "source_id": "1260203093",
+                "name": "Berlin",
+                "confidence": 1,
+                "match_type": "exact",
+                "accuracy": "centroid",
+                "country": "United States",
+                "country_gid": "whosonfirst:country:85633793",
+                "country_a": "USA",
+                "region": "Alabama",
+                "region_gid": "whosonfirst:region:85688675",
+                "region_a": "AL",
+                "county": "Cullman County",
+                "county_gid": "whosonfirst:county:102085729",
+                "county_a": "CU",
+                "locality": "Berlin",
+                "locality_gid": "whosonfirst:locality:1260203093",
+                "continent": "North America",
+                "continent_gid": "whosonfirst:continent:102191575",
+                "label": "Berlin, AL, USA"
+            },
+            "bbox": [
+                -86.74222,
+                34.18149,
+                -86.74222,
+                34.18149
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.56841,
+                    2.20382
+                ]
+            },
+            "properties": {
+                "id": "1260052021",
+                "gid": "whosonfirst:locality:1260052021",
+                "layer": "locality",
+                "source": "whosonfirst",
+                "source_id": "1260052021",
+                "name": "Berlin",
+                "confidence": 1,
+                "match_type": "exact",
+                "accuracy": "centroid",
+                "country": "Colombia",
+                "country_gid": "whosonfirst:country:85632519",
+                "country_a": "COL",
+                "region": "Huila",
+                "region_gid": "whosonfirst:region:85670189",
+                "region_a": "HU",
+                "county": "Garzón",
+                "county_gid": "whosonfirst:county:421186431",
+                "county_a": "GA",
+                "locality": "Berlin",
+                "locality_gid": "whosonfirst:locality:1260052021",
+                "continent": "South America",
+                "continent_gid": "whosonfirst:continent:102191577",
+                "label": "Berlin, Colombia"
+            },
+            "bbox": [
+                -75.56841,
+                2.20382,
+                -75.56841,
+                2.20382
+            ]
+        }
+    ],
+    "bbox": [
+        -99.62538,
+        2.20382,
+        13.7611311116,
+        54.03573
+    ]
+}

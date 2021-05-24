@@ -1,0 +1,26 @@
+{
+  "name": "co2-calc",
+  "version": "1.0.0",
+  "description": "Carbon Footprint Calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vickyokrm/co2-calc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vickyokrm/co2-calc/issues"
+  },
+  "homepage": "https://github.com/vickyokrm/co2-calc#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "minimist": "^1.2.5",
+    "node-fetch": "^2.6.1"
+  }
+}
