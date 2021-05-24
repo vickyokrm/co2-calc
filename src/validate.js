@@ -5,12 +5,12 @@ const allowedTransportMethods = JSON.parse(file.toString())
 
 const containsSymbol = /\p{P}/u
 
-const checkStart = (start)=> {
+const checkStart = (start) => {
   if (start) {
     if (typeof (start) !== 'string' || start.length === 0) {
       throw `Empty or invalid start location: "${start}"`
     }
-    if(start.match(containsSymbol)) {
+    if (start.match(containsSymbol)) {
       throw 'Start location is invalid'
     }
   } else {
@@ -24,7 +24,7 @@ const checkDestination = (end) => {
       throw `Empty or invalid end location: "${end}"`
     }
 
-    if(end.match(containsSymbol)) {
+    if (end.match(containsSymbol)) {
       throw 'Destination is invalid'
     }
   } else {
@@ -45,14 +45,14 @@ const checkTransMethod = (transportationmethod) => {
   }
 }
 const checkAll = (start, end, transportationmethod) => {
-  checkStart(start);
-  checkDestination(end);
-  checkTransMethod(transportationmethod);
+  checkStart(start)
+  checkDestination(end)
+  checkTransMethod(transportationmethod)
 }
 
 module.exports = {
   checkAll,
   checkStart,
   checkDestination,
-  checkTransMethod,
+  checkTransMethod
 }

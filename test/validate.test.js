@@ -14,15 +14,15 @@ describe('Check input values', function () {
       try {
         validate.checkStart()
       } catch (error) {
-        expect(error).to.equals(`No start location found, use option --start`)
+        expect(error).to.equals('No start location found, use option --start')
       }
     })
 
     it('checks for the characters', function () {
       try {
-        validate.checkStart("§)&/&%/%")
+        validate.checkStart('§)&/&%/%')
       } catch (error) {
-        expect(error).to.equals(`Start location is invalid`)
+        expect(error).to.equals('Start location is invalid')
       }
     })
   })
@@ -39,15 +39,15 @@ describe('Check input values', function () {
       try {
         validate.checkDestination()
       } catch (error) {
-        expect(error).to.equals(`No destionation found, use option --end`)
+        expect(error).to.equals('No destionation found, use option --end')
       }
     })
 
     it('checks for the special characters', function () {
       try {
-        validate.checkDestination("§)&/&%/%")
+        validate.checkDestination('§)&/&%/%')
       } catch (error) {
-        expect(error).to.equals(`Destination is invalid`)
+        expect(error).to.equals('Destination is invalid')
       }
     })
   })
@@ -65,7 +65,7 @@ describe('Check input values', function () {
       try {
         validate.checkTransMethod()
       } catch (error) {
-        expect(error).to.equals(`No transportation method found, use option --transportationmethod`)
+        expect(error).to.equals('No transportation method found, use option --transportationmethod')
       }
     })
   })
