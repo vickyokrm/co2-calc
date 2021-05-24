@@ -1,18 +1,5 @@
-/* const express = require('express')
-
-const app = express();
-
-app.get('/', (req, res)=> {
-    res.send('Hej World');
-})
-
-app.listen('1010', ()=> {
-    console.log('App running on port 8080...')
-} )
-
-*/
 const dotenv = require('dotenv').config()
-const geoService = require('./api/geoService')
+const geoService = require('./src/api/geoService')
 const args = require('minimist')(process.argv.slice(2))
 
 const raiseException = (msg) => {
