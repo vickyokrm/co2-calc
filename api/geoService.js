@@ -7,7 +7,7 @@ const searchCity = async (text, layers = 'locality') => {
   const endPoint = url + '/geocode/search?' + querystring.stringify({ api_key: apiKey, text, size: 1 })
   const response = await fetch(endPoint)
   if (!response.ok) {
-    throw new Error('Reading city information failed')
+    throw new Error(`${response.statusText} Reading city information failed`)
   }
   return await response.json()
 }
@@ -29,7 +29,7 @@ const getDistance = async (locations) => {
     })
   })
   if (!response.ok) {
-    throw new Error('Reading distances matrix between the locations failed')
+    throw new Error(`${response.statusText} Reading distances matrix between the locations failed`)
   }
 
   const result = await response.json()

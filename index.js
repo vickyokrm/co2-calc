@@ -8,7 +8,7 @@ const util = require('./util/util')
 async function startApplication () {
   ({ start, end, transportationmethod } = args)
   try {
-    validate.userInput(start, end, transportationmethod)
+    validate.checkAll(start, end, transportationmethod)
     const distanceBetweenCities = await distance.find(start, end)
     const co2 = emissons.compute(distanceBetweenCities, transportationmethod)
     console.log(`Your trip caused approx. ${util.convertToKg(co2)} kg of co2.`)
