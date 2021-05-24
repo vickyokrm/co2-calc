@@ -1,3 +1,8 @@
+const fs = require("fs")
+const path = require("path")
+const file = fs.readFileSync(path.resolve(__dirname, '..', 'config/transportModes.json'))
+const allowedTransportMethods = JSON.parse(file.toString())
+
 const raiseException = (msg) => {
     throw new Error(msg);
 }
@@ -22,6 +27,9 @@ const userInput = (args) => {
     if (args.hasOwnProperty('transportationmethod')) {
         if (typeof (args.transportationmethod) !== "string" || args.transportationmethod.length === 0) {
             raiseException(`Empty or invalid transportation method: "${args.transportationmethod}" `);
+        }
+        if(!allowedTransportMethods.hasOwnProperty(args.transportationmethod)) {
+            raiseException(`The given transport method is invalid: "${args.transportationmethod}" `);
         }
     } else {
         raiseException('No transportation method found, use option --transportationmethod')
